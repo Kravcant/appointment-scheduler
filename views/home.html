@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src = "java.js" defer></script>
 </head>
 <body>
 
     <form>
-        <form id="pizza-form" action="submit-order"  method="post"> <!-- get sends data to url. post does not and thus is more secure -->
+        <form id="form" action="submit-order"  method="post"> <!-- get sends data to url. post does not and thus is more secure -->
             
             <!-- Contact Info -->
             <fieldset>
@@ -16,6 +17,10 @@
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname">
                 <span id="err-fname" class="error">First name cannot be empty!</span>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="fname">
+                <span id="err-lname" class="error">Last name cannot be empty!</span>
 
                 <label for="date">Date:</label>
                 <input type="date" id="date" name="date">
